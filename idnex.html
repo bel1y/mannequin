@@ -4,34 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     
     <nav>
 
         <div class="navbar-logo">
-            <img src="" alt="">
+            <img src="images/logo.png" alt="">
         </div>
 
         <div class="navbar-text">
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <a href="#">главная</a >
+            <a href="#">о нас</a >
+            <a href="#">манекены</a >
+            <a href="#">вешалка</a >
+            <a href="#">всё для дома</a >
+             <a href="#">контакты</a >
+        </div>
+        <div class="navbar-change-menu">
+
+             <div class="navbar-change">
+            <select>
+                
+                <option value="">
+                    <a href="idnex.html">Русский</a>
+                </option> <a href="Uzbekcha.html">
+                <option value="">
+                   Uzbekcha 
+                </option></a>
+            </select>
         </div>
 
-        <div class="navbar-change">
-            <section>
-                <option value="1"></option>
-                <option value="2"></option>
-            </section>
+        <div class="navbar-menu">
+            <i onclick="openingMenu()" class='bx bx-menu-alt-right'></i>
+        </div>
+        </div>
+
+
+        <div class="navbar-text-media">
+                <a onclick="closeMenuText()" href="#">главная</a >
+                <a onclick="closeMenuText()" href="#">о нас</a >
+                <a onclick="closeMenuText()" href="#">манекены</a >
+                <a onclick="closeMenuText()" href="#">вешалка</a >
+                <a onclick="closeMenuText()" href="#">всё для дома</a >
+                <a onclick="closeMenuText()" href="#">контакты</a >
         </div>
 
     </nav>
 
-
+<script src="main.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
