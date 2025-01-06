@@ -1,8 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 
 nav{
@@ -24,7 +26,7 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 40px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     font-family: "Nunito", serif;
     font-optical-sizing: auto;
@@ -67,7 +69,7 @@ nav{
     display: block;
     top: -1000px;
     right: 0;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     font-family: "Nunito", serif;
     font-optical-sizing: auto;
@@ -78,16 +80,65 @@ nav{
     width: 50%;
     height: 100vh;
     transition: 1s;
+    padding-top: 40px;
 }
 .navbar-text-media a{
     text-decoration: none;
-    color: black;
+    color: white;
     display: block !important;
     text-align: center;
-    line-height: 30px;
+    line-height: 15px;
+    margin-top: 30px;
 }
 .navbar-text-media a:hover{
     color: #009B77;
+}
+#close-menu-navbar{
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+}
+#bxl-instagram{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#bxl-facebook{
+    background: #3b5998; 
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+#bxl-telegram{
+    background: #229ED9; 
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+.navbar-social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
 }
 @media (max-width:1800px) {
     .navbar-change select{
@@ -96,7 +147,7 @@ nav{
         font-size: 20px;
     }
     .navbar-text{
-        font-size: 25px;
+        font-size: 22px;
     }
     .navbar-logo img{
         width: 150px ;
@@ -112,7 +163,7 @@ nav{
         font-size: 15px;
     }
     .navbar-text{
-        font-size: 21px;
+        font-size: 16px;
     }
     .navbar-logo img{
         width: 100px ;
@@ -128,7 +179,7 @@ nav{
         font-size: 12px;
     }
     .navbar-text{
-        font-size: 16px;
+        font-size: 12px;
     }
     .navbar-logo img{
         width: 90px ;
@@ -144,7 +195,7 @@ nav{
         font-size: 11px;
     }
     .navbar-text{
-        font-size: 13px;
+        font-size: 11px;
     }
     .navbar-logo img{
         width: 80px ;

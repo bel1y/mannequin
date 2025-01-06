@@ -4,3 +4,6 @@ function openingMenu(){
 function closeMenuText() {
         document.querySelector(".navbar-text-media").style="top:-1000px"
 }
+function closeMenu() {
+    document.querySelector(".navbar-text-media").style="top:-1000px"
+}
