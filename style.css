@@ -13,6 +13,13 @@ nav{
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 1px 5px #8686869a;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 999;
 }
 
 .navbar-logo img{
@@ -223,3 +230,174 @@ nav{
         display: block;
     }
 }
+
+#section-woman{
+    padding-top: 150px;
+}
+#section-woman h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.section-woman-button button{
+    width: 200px;
+    height: 40px;
+    background-color:  #009B77;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 10px #009B77;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.section-woman-button button:hover{
+    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid #009B77;
+    color: #009B77;
+    transition: .5s;
+}
+.section-woman-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.section-woman-button a{
+    text-decoration: none;
+}
+.swiper {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #fff;
+    color: rgb(29, 29, 29);
+    box-shadow: 0px 0px 10px #8383838a;
+    height: 350px !important;
+    margin-top: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #ffffff00;
+    color: #009B77 !important; 
+    border-radius: 50%; 
+    width: 40px !important; 
+    height: 40px !important; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #009B77;
+    color: #fff !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 25px !important;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+.swiper-image{
+    width: 100%;
+    height: 250px;
+}
+.swiper-image img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide:hover .swiper-image img{
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    transition: .5s;
+    border-radius: 10px;
+}
+.swiper-text{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.swiper-button button{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    height: 30px;
+    background-color:  #009B77;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.swiper-button button{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    height: 30px;
+    background-color:  #009B77;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.swiper-button button:hover{
+        background-color:  #fff;
+        color: #009B77;
+        border: 1px solid #009B77;
+    }
