@@ -20,6 +20,7 @@ nav{
     background-color: #fff;
     width: 100%;
     z-index: 999;
+
 }
 
 .navbar-logo img{
@@ -74,7 +75,7 @@ nav{
 .navbar-text-media{
     position: absolute;
     display: block;
-    top: -1000px;
+    top: -1000000px;
     right: 0;
     font-size: 18px;
     font-weight: 500;
@@ -194,6 +195,15 @@ nav{
         cursor: pointer;
         border-radius: 50%;
     }
+    header{
+        padding-top: 10px !important;
+    }
+    .header-part{
+        height: 450px !important;
+    }
+    .header-image img{
+        height: 450px !important;
+    }
 }
 @media (max-width:1000px) {
     .navbar-change select{
@@ -231,16 +241,98 @@ nav{
     }
 }
 
-#section-woman{
-    padding-top: 150px;
+header{
+    padding-top: 103px;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
-#section-woman h1{
+.header-part{
+    background-color: #009B77;
+    height: 500px;
+    width: 50%;
+}
+.header-image{
+    width: 50%;
+}
+.header-image img{
+    height: 500px;
+    width: 100%;
+}
+.text-container {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 100px;
+    color: #fff;
+    border: none;
+}
+
+
+.header-button button{
+    width: 200px;
+    height: 40px;
+    background-color:  #fff;
+    color: #009B77;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: .5s;
+}
+.header-button{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.header-part button:hover{
+    box-shadow: 0px 0px 10px #fff;
+}
+.header-button a{
+    text-decoration: none;
+}
+.header-text{
+    padding-top: 100px;
+    padding-left: 20px;
+    width: 80%;
+}
+.header-text p{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #e6e6e6e7;
+}
+
+
+.special-for-h1{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
     font-family: "Nunito", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    padding-top: 150px;
+}
+.special-for-h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 10px;
 }
 .section-woman-button button{
     width: 200px;
@@ -281,8 +373,8 @@ nav{
     width: 100%;
     height: 400px;
     margin-top: 20px;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }
 .swiper-slide {
     display: flex;
@@ -296,6 +388,18 @@ nav{
     margin-top: 25px;
     border-radius: 10px;
     cursor: pointer;
+}
+@media (max-width:550px) {
+    .swiper-slide {
+        height: 350px !important;
+        width: 350px !important;
+    }
+}
+@media (max-width:450px) {
+    .swiper-slide {
+        height: 90% !important;
+        width: 100% !important;
+    }
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -400,4 +504,86 @@ nav{
         background-color:  #fff;
         color: #009B77;
         border: 1px solid #009B77;
+    }
+
+#about-us h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: "Nunito", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        padding: 10px;
+        padding-top: 50px;
+}
+    .advantages{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    .advantages div{
+        position: relative;
+        height: 250px;
+        width: 200px;
+    }
+    .advantages p{
+        position: absolute; 
+        color: #009b773f; 
+        font-size: 200px; 
+        font-weight: 500;
+        font-family: "Nunito", serif;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -65%); 
+        z-index: 1; 
+        margin: 0;
+    }
+    .advantages span {
+        position: relative;
+        z-index: 2; 
+        color: #525252;
+        font-weight: 500;
+        font-family: "Nunito", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+    .advantages h4{
+        margin-top: 100px;
+        font-weight: 900;
+        font-family: "Nunito", serif;
+    }
+
+    #contacts h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: "Nunito", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        padding: 30px;
+    }
+
+    footer{
+        height: 200px;
+        background-color: #009B77;
+        width: 100%;
+    }
+    .footers-div{
+        padding: 10px;
+    }
+    .footers-div img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+    .text-container {
+        border-right: 4px solid black;
+        padding-right: 5px;
+        white-space: nowrap;
     }

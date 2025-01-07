@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="images/logo.png">
+    <title>Ният Манекены</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,8 @@
         </div>
 
         <div class="navbar-text">
-            <a href="#">манекены</a >
+            <a href="Mannequins.html">манекены</a >
+            <a href="#about-us">о нас</a >
             <a href="#">вешалка</a >
             <a href="#">всё для дома</a >
             <a href="#">о нас</a >
@@ -64,8 +66,56 @@
 
     </nav>
 
-    <section id="section-woman">
-        <h1>Женские манекены</h1>
+    <header>
+        <div class="header-part">
+            <div class="text-container" id="text"></div>
+            <div class="header-text">
+                <p>Предлагаем манекены высшего качества, которые идеально подойдут для вашего бизнеса. У нас вы найдете разнообразные модели, отвечающие всем вашим потребностям!</p>
+            </div>
+            <div class="header-button">
+                <a href="#section-mannequins"><button>Посмореть</button></a>
+            </div>
+            </div> 
+        
+        </div>
+        <div class="header-image">
+            <img src="images/no-image.png" alt="">
+        </div>
+    </header>
+
+    <section id="about-us">
+        <h1>О нас</h1>
+        <div class="advantages">
+            <div>
+                <p>1</p>
+                <h4>Качетсвенные манекены</h4>
+                <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
+            </div>
+            <div>
+                <p>2</p>
+                <h4>Качетсвенные манекены</h4>
+                <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
+            </div>
+            <div>
+                <p>3</p>
+                <h4>Качетсвенные манекены</h4>
+                <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
+            </div>
+            <div>
+                <p>4</p>
+                <h4>Качетсвенные манекены</h4>
+                <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
+            </div>
+            <div>
+                <p>5</p>
+                <h4>Качетсвенные манекены</h4>
+                <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-mannequins">
+        <h1 class="special-for-h1">Женские манекены</h1>
         <div class="section-woman-button">
                     <a href=""><button>Узнать по больше</button></a>
         </div>
@@ -145,8 +195,8 @@
 
     </section>
 
-    <section id="section-woman">
-        <h1>Мужские манекены</h1>
+    <section id="section-mannequins">
+        <h1 class="special-for-h2">Мужские манекены</h1>
         <div class="section-woman-button">
                     <a href=""><button>Узнать по больше</button></a>
         </div>
@@ -226,8 +276,8 @@
 
     </section>
 
-    <section id="section-woman">
-        <h1>Детские манекены</h1>
+    <section id="section-mannequins">
+        <h1 class="special-for-h2">Детские манекены</h1>
         <div class="section-woman-button">
                     <a href=""><button>Узнать по больше</button></a>
         </div>
@@ -306,6 +356,18 @@
         </div>
 
     </section>
+
+
+    <section id="contacts">
+        <h1>Контакты</h1>
+
+    </section>
+
+    <footer>
+        <div class="footers-div">
+            <a href="images/logo.png"><img src="./images/logo.png" alt=""></a>
+        </div>
+    </footer>
 
 <script src="main.js"></script>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -313,7 +375,7 @@
 <script>
     const swiper = new Swiper('.swiper', {
         slidesPerView: 4,    // Количество отображаемых слайдов
-        spaceBetween: 50,     // Промежуток между слайдами
+        spaceBetween: 30,     // Промежуток между слайдами
         loop: true,           // Бесконечная прокрутка
         autoplay: {
             delay: 3000,     // Время смены слайдов (3 секунды)
@@ -323,7 +385,62 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            2000: {
+                slidesPerView: 6,
+            },
+            1700: {
+                slidesPerView: 5,
+            },
+            1100: {
+                slidesPerView: 4,
+            },
+            850: {
+                slidesPerView: 3,
+            },
+            550: {
+                slidesPerView: 2,
+            },
+            100: {
+                slidesPerView: 1,
+            },
+        },
     });
+</script>
+<script>
+    const texts = [
+        "Качественные манекены",
+        "Быстрая доставка",
+        "Надежные товары"
+    ];
+    
+    const textContainer = document.getElementById('text');
+    let textIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+        if (charIndex < texts[textIndex].length) {
+            textContainer.textContent += texts[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, 200); // Задержка между символами
+        } else {
+            setTimeout(erase, 1000); // Задержка перед стиранием
+        }
+    }
+
+    function erase() {
+        if (charIndex > 0) {
+            textContainer.textContent = texts[textIndex].slice(0, charIndex - 1);
+            charIndex--;
+            setTimeout(erase, 100); // Задержка между стиранием
+        } else {
+            textIndex = (textIndex + 1) % texts.length; // Переход к следующему тексту
+            charIndex = 0; // Сброс индекса символа
+            setTimeout(type, 1000); // Задержка перед написанием следующего текста
+        }
+    }
+
+    type(); // Запуск анимации
 </script>
 </body>
 </html>

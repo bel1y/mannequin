@@ -1,0 +1,233 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 1px 5px #8686869a;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.navbar-logo img{
+    width: 200px ;
+    height: 200px ;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.navbar-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    cursor: pointer;
+}
+.navbar-text a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-text a:hover{
+    color: #009B77;
+}
+
+.navbar-change select{
+    width: 250px;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #9b9b9b67;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.navbar-change-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.navbar-menu{
+    font-size: 25px;
+    display: none;
+}
+.navbar-text-media{
+    position: absolute;
+    display: block;
+    top: -1000000px;
+    right: 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    cursor: pointer;
+    background-color: #000000d5;
+    backdrop-filter: blur(5px);
+    width: 50%;
+    height: 100vh;
+    transition: 1s;
+    padding-top: 40px;
+}
+.navbar-text-media a{
+    text-decoration: none;
+    color: white;
+    display: block !important;
+    text-align: center;
+    line-height: 15px;
+    margin-top: 30px;
+}
+.navbar-text-media a:hover{
+    color: #009B77;
+}
+#close-menu-navbar{
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+}
+#bxl-instagram{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#bxl-facebook{
+    background: #3b5998; 
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+#bxl-telegram{
+    background: #229ED9; 
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+.navbar-social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+@media (max-width:1800px) {
+    .navbar-change select{
+        width: 200px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .navbar-text{
+        font-size: 22px;
+    }
+    .navbar-logo img{
+        width: 150px ;
+        height: 150px ;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+}
+@media (max-width:1500px) {
+    .navbar-change select{
+        width: 150px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .navbar-text{
+        font-size: 16px;
+    }
+    .navbar-logo img{
+        width: 100px ;
+        height: 100px ;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+}
+@media (max-width:1200px) {
+    .navbar-change select{
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .navbar-text{
+        font-size: 12px;
+    }
+    .navbar-logo img{
+        width: 90px ;
+        height: 90px ;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+}
+@media (max-width:1000px) {
+    .navbar-change select{
+        width: 100px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .navbar-text{
+        font-size: 11px;
+    }
+    .navbar-logo img{
+        width: 80px ;
+        height: 80px ;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+}
+@media (max-width:850px) {
+    .navbar-change select{
+        width: 100px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .navbar-text{
+        display: none;
+    }
+    .navbar-logo img{
+        width: 100px ;
+        height: 100px ;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .navbar-menu{
+        display: block;
+    }
+}
