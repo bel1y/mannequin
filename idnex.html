@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo.png">
-    <title>Ният Манекены</title>
+    <title>Niyat Maneken</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
     <nav>
 
         <div class="navbar-logo">
-            <img src="images/logo.png" alt="">
+            <a href="#header"><img src="images/logo.png" alt=""></a>
         </div>
 
         <div class="navbar-text">
+            <a href="#header">Главная</a>
+            <a href="AboutUs.html">о нас</a >
             <a href="Mannequins.html">манекены</a >
-            <a href="#about-us">о нас</a >
-            <a href="#">вешалка</a >
-            <a href="#">всё для дома</a >
-            <a href="#">о нас</a >
-            <a href="#">контакты</a >
+            <a href="Veshalka.html">вешалка</a >
+            <a href="AllForHome.html">всё для дома</a >
+            <a href="contact.html">контакты</a >
         </div>
         <div class="navbar-change-menu">
 
@@ -50,11 +51,12 @@
 
         <div class="navbar-text-media">
                 <div class="media-text-nav">
+                        <a onclick="closeMenuText()" href="#header">Главная</a >
+                        <a onclick="closeMenuText()" href="#about-us">о нас</a >
                         <a onclick="closeMenuText()" href="#">манекены</a >
                         <a onclick="closeMenuText()" href="#">вешалка</a >
                         <a onclick="closeMenuText()" href="#">всё для дома</a >
-                        <a onclick="closeMenuText()" href="#">о нас</a >
-                        <a onclick="closeMenuText()" href="#">контакты</a >
+                        <a onclick="closeMenuText()" href="#contacts">контакты</a >
                 </div>
                 <i id="close-menu-navbar" onclick="closeMenu()" class='bx bx-x'></i>
                 <div class="navbar-social-media">
@@ -66,47 +68,47 @@
 
     </nav>
 
-    <header>
-        <div class="header-part">
-            <div class="text-container" id="text"></div>
+    <header id="header">
+        <div class="header-part" data-aos="fade-right">
+            <div class="text">Качественные манекены</div>
             <div class="header-text">
                 <p>Предлагаем манекены высшего качества, которые идеально подойдут для вашего бизнеса. У нас вы найдете разнообразные модели, отвечающие всем вашим потребностям!</p>
             </div>
             <div class="header-button">
-                <a href="#section-mannequins"><button>Посмореть</button></a>
+                <a href="Mannequins.html"><button>Посмореть</button></a>
             </div>
             </div> 
         
         </div>
-        <div class="header-image">
-            <img src="images/no-image.png" alt="">
+        <div class="header-image" data-aos="fade-left">
+            <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
         </div>
     </header>
 
     <section id="about-us">
         <h1>О нас</h1>
         <div class="advantages">
-            <div>
+            <div data-aos="fade-right">
                 <p>1</p>
                 <h4>Качетсвенные манекены</h4>
                 <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
             </div>
-            <div>
+            <div data-aos="fade-right">
                 <p>2</p>
                 <h4>Качетсвенные манекены</h4>
                 <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
             </div>
-            <div>
+            <div data-aos="fade-up">
                 <p>3</p>
                 <h4>Качетсвенные манекены</h4>
                 <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
             </div>
-            <div>
+            <div data-aos="fade-left">
                 <p>4</p>
                 <h4>Качетсвенные манекены</h4>
                 <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
             </div>
-            <div>
+            <div data-aos="fade-left">
                 <p>5</p>
                 <h4>Качетсвенные манекены</h4>
                 <span>Качественные манекены идеально сочетают стиль и прочность, подчеркивая вашу коллекцию одежды.</span>
@@ -114,9 +116,13 @@
         </div>
     </section>
 
+    <div class="background-attachment">
+        <h1>Манекены</h1>
+    </div>
+
     <section id="section-mannequins">
-        <h1 class="special-for-h1">Женские манекены</h1>
-        <div class="section-woman-button">
+        <h1 class="special-for-h1" data-aos="fade-up">Женские манекены</h1>
+        <div class="section-woman-button" data-aos="fade-up">
                     <a href=""><button>Узнать по больше</button></a>
         </div>
 
@@ -124,7 +130,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                      <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -135,7 +141,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -146,7 +152,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -157,7 +163,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -168,7 +174,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -179,7 +185,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -196,8 +202,8 @@
     </section>
 
     <section id="section-mannequins">
-        <h1 class="special-for-h2">Мужские манекены</h1>
-        <div class="section-woman-button">
+        <h1 class="special-for-h2" data-aos="fade-up">Мужские манекены</h1>
+        <div class="section-woman-button" data-aos="fade-up">
                     <a href=""><button>Узнать по больше</button></a>
         </div>
 
@@ -205,7 +211,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                      <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -216,7 +222,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -227,7 +233,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -238,7 +244,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -249,7 +255,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -260,7 +266,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -277,8 +283,8 @@
     </section>
 
     <section id="section-mannequins">
-        <h1 class="special-for-h2">Детские манекены</h1>
-        <div class="section-woman-button">
+        <h1 class="special-for-h2" data-aos="fade-up" >Детские манекены</h1>
+        <div class="section-woman-button" data-aos="fade-up">
                     <a href=""><button>Узнать по больше</button></a>
         </div>
 
@@ -286,7 +292,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                      <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -297,7 +303,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -308,7 +314,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -319,7 +325,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -330,7 +336,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -341,7 +347,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper-image">
-                        <img src="images/no-image.png" alt="">
+                        <img src="https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg" alt="">
                      </div>
                      <div class="swiper-text">
                         <p>манекены</p>
@@ -359,19 +365,42 @@
 
 
     <section id="contacts">
-        <h1>Контакты</h1>
+        <h1 data-aos="fade-up">Контакты</h1>
 
     </section>
 
     <footer>
         <div class="footers-div">
-            <a href="images/logo.png"><img src="./images/logo.png" alt=""></a>
+            <!-- <div class="footer-img"><a href="#header"><img src="./images/logo.png" alt=""></a></div> -->
+            <div class="footer-text">
+                <a href="#header">Главная</a>
+                <a href="AboutUs.html">О нас</a>
+                <a href="Mannequins.html">Манекены</a>
+                <a href="Veshalka.html">Вешалка</a>
+                <a href="AllForHome.html">Всё для дома</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+            <div class="footer-social-media">
+                <a href="https://www.instagram.com/"><div id="bxl-instagram-footer"><i class='bx bxl-instagram' ></i></div></a>
+                <a href="https://www.facebook.com/?locale=ru_RU"><div id="bxl-facebook-footer"><i class='bx bxl-facebook' ></i></div></a>
+                <a href="https://web.telegram.org/k/"><div id="bxl-telegram-footer"><i class='bx bxl-telegram' ></i></div></a>
+                <a href="https://youtube.com"><div id="bxl-youtube-footer"><i class='bx bxl-youtube'></i></div></a>
+            </div>
+            <div class="footer-nickname">
+                <h3>Niyat Maneken</h3>
+            </div>
+
         </div>
+
     </footer>
 
 <script src="main.js"></script>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 <script>
     const swiper = new Swiper('.swiper', {
         slidesPerView: 4,    // Количество отображаемых слайдов
@@ -406,41 +435,6 @@
             },
         },
     });
-</script>
-<script>
-    const texts = [
-        "Качественные манекены",
-        "Быстрая доставка",
-        "Надежные товары"
-    ];
-    
-    const textContainer = document.getElementById('text');
-    let textIndex = 0;
-    let charIndex = 0;
-
-    function type() {
-        if (charIndex < texts[textIndex].length) {
-            textContainer.textContent += texts[textIndex].charAt(charIndex);
-            charIndex++;
-            setTimeout(type, 200); // Задержка между символами
-        } else {
-            setTimeout(erase, 1000); // Задержка перед стиранием
-        }
-    }
-
-    function erase() {
-        if (charIndex > 0) {
-            textContainer.textContent = texts[textIndex].slice(0, charIndex - 1);
-            charIndex--;
-            setTimeout(erase, 100); // Задержка между стиранием
-        } else {
-            textIndex = (textIndex + 1) % texts.length; // Переход к следующему тексту
-            charIndex = 0; // Сброс индекса символа
-            setTimeout(type, 1000); // Задержка перед написанием следующего текста
-        }
-    }
-
-    type(); // Запуск анимации
 </script>
 </body>
 </html>
