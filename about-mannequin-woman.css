@@ -263,6 +263,7 @@ nav{
 .about-mannequin-woman-text h1{
 text-align: center;
 font-size: 25px;
+padding-top: 10px;
 }
 .about-mannequin-woman-text p{
 font-size: 17px;
@@ -344,6 +345,31 @@ padding: 10px 10px 0px 5px;
         padding-bottom: 20px;
     }
 }
+@media (max-width:650px) {
+    .about-mannequin-woman-image{
+        width: 80%;
+        height: 450px;
+        margin: auto;
+        overflow: hidden;
+        padding-top: 10px;
+    }
+}
+@media (max-width:500px) {
+    .about-mannequin-woman-image{
+        width: 90%;
+        height: 350px;
+    }
+    .about-mannequin-woman-text{
+        width: 90%;
+    }
+}
+@media (max-width:390px) {
+    .about-mannequin-woman-image{
+        width: 90%;
+        height: 300px;
+    }
+}
+
 
 footer{
     height: 200px;
