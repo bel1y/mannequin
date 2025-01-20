@@ -243,11 +243,11 @@ nav{
 
 .about-mannequin-woman{
     display: flex;
-    height: 550px;
+    height: auto;
 }
 .about-mannequin-woman-image{
     width: 50%;
-    height: 100%;
+    height: 550px;
 }
 .about-mannequin-woman-image img{
     width: 100%;
@@ -295,6 +295,55 @@ padding: 10px 10px 0px 5px;
 
 }
 
+@media (max-width:950px) {
+    .about-mannequin-woman-text p{
+        font-size: 14px;
+        padding: 10px 10px 0px 5px;
+        }
+        .about-mannequin-woman-image{
+            height: 470px;
+        }
+}
+@media (max-width:800px) {
+    .about-mannequin-woman{
+        display: block;
+    }
+    .about-mannequin-woman-image{
+        width: 80%;
+        height: 550px;
+        margin: auto;
+        overflow: hidden;
+        padding-top: 10px;
+    }
+    .about-mannequin-woman-image img{
+        border-radius: 10px;
+    }
+    .about-mannequin-woman-text{
+        font-weight: 600;
+        font-family: "Nunito", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        width: 80%;
+        margin: auto;
+    }
+    .about-mannequin-woman-text h1{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+    }
+    .about-mannequin-woman-text p{
+    font-size: 17px;
+    padding: 10px 10px 0px 5px;
+    }
+    .about-mannequin-woman-button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
 
 footer{
     height: 200px;
