@@ -407,8 +407,8 @@ footer{
     min-width: 100%;
     cursor: pointer;
     border-radius: 10px;
-    width: 100px !important;
-    height: 500px !important;
+    width: 100px ;
+    height: 500px ;
 }
 .buttons {
     position: absolute;
@@ -494,4 +494,50 @@ h1{
 }
 .text p{
     font-size: 17px;
+}
+@media (max-width:900px) {
+    .text p{
+        font-size: 15px;
+    }
+}
+@media (max-width:800px) {
+    section{
+        display: block;
+    }
+    .image{
+        width: 80%;
+        margin: auto;
+    }
+    .slide {
+        height: 400px ;
+    }
+    .text{
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+}
+@media (max-width:600px) {
+    .text p{
+        font-size: 15px;
+    }
+}
+@media (max-width:500px) {
+    .image{
+        width: 95%;
+    }
+    .slide {
+        height: 350px ;
+    }
+    .text{
+        width: 95%;
+    }
+    .about-mannequin-woman-button a{
+        width: 95%;
+        height: 45px;
+        font-size: 18px;
+    }
 }
