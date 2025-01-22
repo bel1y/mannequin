@@ -441,7 +441,13 @@ footer{
     height: 90%;
     border-radius: 10px;
 }
-
+@media (max-width:500px) {
+    .lightbox img {
+        width: 95%;
+        height: 400px;
+        border-radius: 10px;
+    }
+}
 .about-mannequin-woman-button{
     width: 100%;
     display: flex;
