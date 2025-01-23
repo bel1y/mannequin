@@ -1209,3 +1209,86 @@ header{
     margin: auto;
     font-size: 20px;
 }
+
+.veshalka{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.veshalka-text{
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+
+}
+.veshalka-text h5{
+    font-size: 150px;
+    color: #009B77;
+    font-weight: 800;
+}
+.veshalka-text p{
+    margin: auto;
+    color: #000;
+    font-weight: 800;
+    font-size: 20px;
+}
+.veshalka-return a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 70px 10px 70px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #009B77;
+    transition: .5s;
+}
+.veshalka-return a:hover{
+    background-color: #fff;
+    box-shadow: 0 0 10px #009B77;
+    color: #009B77;
+}
+.veshalka-return{
+    margin-top: 30px;
+}
+
+
+.chunk {
+    position: absolute;
+    background-color: #fff; /* Белый цвет выпавших кусочков */
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.chunk1 {
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 150px;
+    transform: rotate(15deg);
+}
+
+.chunk2 {
+    width: 30px;
+    height: 30px;
+    top: 100px;
+    left: 50px;
+    transform: rotate(-30deg);
+}
+
+.chunk3 {
+    width: 50px;
+    height: 50px;
+    top: 130px;
+    left: 150px;
+    transform: rotate(45deg);
+}
+
+.chunk4 {
+    width: 25px;
+    height: 25px;
+    top: 80px;
+    left: 180px;
+    transform: rotate(-15deg);
+}
