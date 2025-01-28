@@ -51,18 +51,7 @@ nav{
     color: #009B77;
 }
 
-.navbar-change select{
-    width: 250px;
-    height: 50px;
-    padding-left: 10px;
-    border-radius: 5px;
-    border: 1px solid #9b9b9b67;
-    font-weight: 500;
-    font-family: "Nunito", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 20px;
-}
+
 
 .navbar-change-menu{
     display: flex;
@@ -155,12 +144,75 @@ nav{
     justify-content: space-around;
     margin-top: 60px;
 }
+
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.select-selected {
+    background-color: #fff;
+    border: 1px solid #c9c9c9be;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.select-selected img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.select-items {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 99;
+    width: 100%;
+    font-weight: 500;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 5px;
+}
+
+.select-items div {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 5px;
+    cursor: pointer;
+}
+.select-items img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.select-items div:hover {
+    background-color: #009B77;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.select-selected:focus + .select-items {
+    display: block;
+}
+
+
 @media (max-width:1800px) {
-    .navbar-change select{
-        width: 200px;
-        height: 45px;
-        font-size: 20px;
-    }
     .navbar-text{
         font-size: 22px;
     }
@@ -172,11 +224,7 @@ nav{
     }
 }
 @media (max-width:1500px) {
-    .navbar-change select{
-        width: 150px;
-        height: 35px;
-        font-size: 15px;
-    }
+
     .navbar-text{
         font-size: 16px;
     }
@@ -188,11 +236,7 @@ nav{
     }
 }
 @media (max-width:1200px) {
-    .navbar-change select{
-        width: 120px;
-        height: 30px;
-        font-size: 12px;
-    }
+
     .navbar-text{
         font-size: 12px;
     }
@@ -204,11 +248,6 @@ nav{
     }
 }
 @media (max-width:1000px) {
-    .navbar-change select{
-        width: 100px;
-        height: 30px;
-        font-size: 11px;
-    }
     .navbar-text{
         font-size: 11px;
     }
@@ -220,11 +259,7 @@ nav{
     }
 }
 @media (max-width:850px) {
-    .navbar-change select{
-        width: 100px;
-        height: 30px;
-        font-size: 11px;
-    }
+
     .navbar-text{
         display: none;
     }
