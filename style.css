@@ -210,7 +210,7 @@ nav{
 .select-selected:focus + .select-items {
     display: block;
 }
-
+    
 
 @media (max-width:1800px) {
     .navbar-text{
